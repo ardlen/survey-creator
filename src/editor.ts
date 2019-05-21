@@ -73,7 +73,7 @@ export interface IToolbarItem {
 
 export class SurveyCreator implements ISurveyObjectEditorOptions {
   public static defaultNewSurveyText: string = "{ pages: [ { name: 'page1'}] }";
-  private _haveCommercialLicense = ko.observable(false);
+  private _haveCommercialLicense = ko.observable(true);
   private renderedElement: HTMLElement;
   private surveyjs: HTMLElement;
 
@@ -123,6 +123,8 @@ export class SurveyCreator implements ISurveyObjectEditorOptions {
   public set haveCommercialLicense(val) {
     this._haveCommercialLicense(val);
   }
+
+
 
   /**
    * You need to set this property to true if you want to inplace edit item values instead of texts.

@@ -18,7 +18,7 @@ import {
 import * as Survey from "survey-knockout";
 import RModal from "rmodal";
 import { SurveyHelper } from "../surveyHelper";
-import { underline } from "chalk";
+//import { underline } from "chalk";
 import { focusFirstControl } from "../utils/utils";
 
 export class SurveyPropertyEditorShowWindow {

@@ -8,13 +8,13 @@ export class StylesManager {
 
   public static ThemeColors: { [key: string]: { [key: string]: string } } = {
     default: {
-      "$primary-color": "#1ab394",
-      "$secondary-color": "#1ab394",
+      "$primary-color": "#f8f4f0",
+      "$secondary-color": "#f8f4f0",
       "$primary-text-color": "#676a6c",
       "$secondary-text-color": "#a7a7a7",
       "$inverted-text-color": "#ffffff",
-      "$primary-hover-color": "#18a689",
-      "$selection-border-color": "#1ab394",
+      "$primary-hover-color": "#f8f4f0",
+      "$selection-border-color": "#f8f4f0",
       "$primary-icon-color": "#3d4d5d",
       "$primary-bg-color": "#fff",
       "$secondary-bg-color": "#f4f4f4",

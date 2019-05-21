@@ -1,10 +1,10 @@
 if (!window["%hammerhead%"]) {
-  var mainColor = "#023670";
-  var mainHoverColor = "#035bbc";
+  var mainColor = "#368bb3";
+  var mainHoverColor = "#368bb3";
   var textColor = "#4a4a4a";
-  var headerColor = "#160ce8";
+  var headerColor = "#59aef4";
   var headerBackgroundColor = "#4a4a4a";
-  var bodyContainerBackgroundColor = "#f8f8f8";
+  var bodyContainerBackgroundColor = "#f8f4f0";
 
   var defaultThemeColorsSurvey = Survey.StylesManager.ThemeColors["default"];
   defaultThemeColorsSurvey["$main-color"] = mainColor;
@@ -12,12 +12,9 @@ if (!window["%hammerhead%"]) {
   defaultThemeColorsSurvey["$text-color"] = textColor;
   defaultThemeColorsSurvey["$header-color"] = headerColor;
   defaultThemeColorsSurvey["$header-background-color"] = headerBackgroundColor;
-  defaultThemeColorsSurvey[
-    "$body-container-background-color"
-  ] = bodyContainerBackgroundColor;
+  defaultThemeColorsSurvey["$body-container-background-color"] = bodyContainerBackgroundColor;
 
-  var defaultThemeColorsEditor =
-    SurveyEditor.StylesManager.ThemeColors["default"];
+  var defaultThemeColorsEditor = SurveyEditor.StylesManager.ThemeColors["default"];
   defaultThemeColorsEditor["$primary-color"] = mainColor;
   defaultThemeColorsEditor["$secondary-color"] = mainColor;
   defaultThemeColorsEditor["$primary-hover-color"] = mainHoverColor;
@@ -42,10 +39,14 @@ if (!window["%hammerhead%"]) {
   });
 
   $.material.init();
-
+  SurveyEditor.editorLocalization.currentLocale = "ru";
   SurveyEditor.StylesManager.applyTheme("bootstrapmaterial");
   var editor = new SurveyEditor.SurveyEditor("editorElement", {
-    useTabsInElementEditor: true
+    useTabsInElementEditor: true,
+    haveCommercialLicense :true,
+    showOptions :true,
+    showState :true
+
   });
   window.editor = editor;
 }
